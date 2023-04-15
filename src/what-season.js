@@ -13,7 +13,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 function getSeason(date) {
   if (!date) {
-    throw new Error("Unable to determine the time of year!");
+    throw new Error("Invalid date!");
     } else if (date instanceof Date && !isNaN(date) && date.getMilliseconds() === 0){
       throw new Error("Invalid date!");
     } else if(date instanceof Date && !isNaN(date)) {
